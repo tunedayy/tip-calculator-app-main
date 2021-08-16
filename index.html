@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,27 +15,44 @@
   </style>
 </head>
 <body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
+  <div class="logo">
+    <img src="./images/logo.svg" alt="logo">
+  </div>
+  <div class="main">
+    <div class="forms">
+      <div>
+        <h4>Bill</h4>
+        <input type="text" placeholder="Enter amount">
+      </div>
+      <div>
+        <h4>Select tip %</h4>
+        <div class="tip-buttons">
+          <button class="tip-percentage" data-percent="5">5%</button>
+        <button class="tip-percentage" data-percent="10">10%</button>
+        <button class="tip-percentage" data-percent="15">15%</button>
+        <button class="tip-percentage" data-percent="25">25%</button>
+        <button class="tip-percentage" data-percent="50">50%</button>
+        <input type="text" class="custom-tip-percentage" placeholder="Custom">
+        </div>
+      </div>
+      <div>
+        <h4>number of People</h4>
+        <p class="alert-message"></p>
+        <input type="text" placeholder="0">
+      </div>
+    </div>
+    <div class="form-totals">
+      <div>
+        <p>Tip amount <br> / person</p>
+      <span class="tip-per-person value">$0.00</span>
+      </div>
+      <div>
+        <p>Total <br>/ person</p>
+      <span class="total-per-person value">$0.00</span>
+      </div>
+      <button class="reset">Reset</button>
+    </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.

@@ -1,0 +1,121 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+:root{
+ --light-cyan-1: hsl(185, 41%, 84%);
+ --light-cyan-2: hsl(189, 41%, 97%);
+ --strong-cyan: hsl(172, 67%, 45%);
+--very-dark-cyan: hsl(183, 100%, 15%);
+--fonts: 'Roboto Mono', monospace;
+}
+
+body {
+    background: var(--light-cyan-1);
+    font-family: var(--fonts);
+}
+h4 {
+    margin: 5px;
+    text-transform: capitalize;
+    color: var(--very-dark-cyan);
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+.logo img {
+    display: block;
+    margin: 4em auto;
+}
+.main {
+    background: #ffffff;
+    width: 60%;
+    margin: auto;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+}
+.forms, .form-totals {
+    width: 50%;
+    padding: 10px;
+}
+.form-totals {
+    background: var(--very-dark-cyan);
+    border-radius: 15px;
+    color: #ffffff;
+}
+.forms input[type=text]{
+    padding: 5px;
+    width: 90%;
+    font-family: var(--fonts);
+    text-align: right;
+    color: var(--very-dark-cyan);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.forms div {
+    margin-bottom: 20px;
+}
+button.tip-percentage {
+    background: var(--very-dark-cyan);
+    color: #ffffff;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-family: var(--fonts);
+    font-weight: 500;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.custom-tip-percentage {
+    font-family: var(--fonts);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+button.tip-percentage:hover {
+    background: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+}
+.active {
+    background: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+}
+.tip-buttons {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.value {
+    float: right;
+    color: var(--strong-cyan);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.form-totals div{
+    padding-bottom: 80px;
+}
+.form-totals p {
+    float: left;
+}
+.reset{
+    width: 90%;
+    background: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: var(--fonts);
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 32%;
+    cursor: pointer;
+}
