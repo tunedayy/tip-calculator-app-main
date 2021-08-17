@@ -26,8 +26,9 @@ h4 {
     margin: 5px;
     text-transform: capitalize;
     color: var(--very-dark-cyan);
-    font-weight: 400;
+    font-weight: 600;
     font-size: 0.8rem;
+    display: inline-block;
 }
 .logo img {
     display: block;
@@ -38,7 +39,7 @@ h4 {
     width: 60%;
     margin: auto;
     border-radius: 25px;
-    padding: 20px;
+    padding: 40px;
     display: flex;
 }
 .forms, .form-totals {
@@ -50,7 +51,7 @@ h4 {
     border-radius: 15px;
     color: #ffffff;
 }
-.forms input[type=text]{
+.forms input[type=number]{
     padding: 5px;
     width: 90%;
     font-family: var(--fonts);
@@ -62,7 +63,7 @@ h4 {
 .forms div {
     margin-bottom: 20px;
 }
-button.tip-percentage {
+.tip-percentage {
     background: var(--very-dark-cyan);
     color: #ffffff;
     padding: 5px;
@@ -118,4 +119,10 @@ button.tip-percentage:hover {
     position: relative;
     top: 32%;
     cursor: pointer;
+}
+.alert-message {
+    color: red;
+    font-size: 0.6rem;
+    float: right;
+    padding-right: 10px;
 }

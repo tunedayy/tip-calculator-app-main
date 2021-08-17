@@ -22,7 +22,7 @@
     <div class="forms">
       <div>
         <h4>Bill</h4>
-        <input type="text" placeholder="Enter amount">
+        <input type="number" placeholder="Enter amount" class="bill-amount">
       </div>
       <div>
         <h4>Select tip %</h4>
@@ -32,13 +32,13 @@
         <button class="tip-percentage" data-percent="15">15%</button>
         <button class="tip-percentage" data-percent="25">25%</button>
         <button class="tip-percentage" data-percent="50">50%</button>
-        <input type="text" class="custom-tip-percentage" placeholder="Custom">
+        <input type="number" class="custom-tip-percentage" placeholder="Custom">
         </div>
       </div>
       <div>
         <h4>number of People</h4>
         <p class="alert-message"></p>
-        <input type="text" placeholder="0">
+        <input type="number" placeholder="0" class="guests">
       </div>
     </div>
     <div class="form-totals">
@@ -53,9 +53,10 @@
       <button class="reset">Reset</button>
     </div>
   </div>
+  <script src="app.js"></script>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://codesoftunde.com/">Olatunde Awotunde</a>.
   </div>
 </body>
 </html>
