@@ -17,8 +17,6 @@ btns.forEach (function(item){
             tipAmount = ((billTotal * (percent/100))/guestNum);
             tipTotal = ((billTotal / guestNum) + tipAmount);
             item.classList.toggle('active');
-            console.log(tipAmount);
-            console.log(tipTotal);
             tipPerson.textContent = `$${tipAmount.toFixed(2)}`;
             totalPerson.textContent = `$${tipTotal.toFixed(2)}`;
         }
