@@ -1,3 +1,6 @@
+
+// Declare variables
+
 const billAmount = document.querySelector('.bill-amount');
 const btns = document.querySelectorAll('.tip-percentage');
 let tipPerson = document.querySelector('.tip-per-person');
@@ -7,6 +10,8 @@ let totalPerson = document.querySelector('.total-per-person');
 const resetBtn = document.querySelector('.reset');
 const customTip = document.querySelector('.custom-tip-percentage');
 
+
+// Tip percentage button functions
 
 btns.forEach (function(item){
     item.addEventListener('click', function(){
@@ -31,6 +36,9 @@ btns.forEach (function(item){
     });
 });
 
+
+// Custom tip function
+
 function custom (){
     if (customTip.value){
         percent = customTip.value;
@@ -52,6 +60,9 @@ function custom (){
     }
 }
 document.addEventListener('keyup', custom);
+
+
+// reset button function
 
 resetBtn.addEventListener('click', reset);
 
