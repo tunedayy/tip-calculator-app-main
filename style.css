@@ -104,6 +104,9 @@ button.tip-percentage:hover {
 .form-totals p {
     float: left;
 }
+.form-totals sub {
+    color: var(--strong-cyan);
+}
 .reset{
     width: 90%;
     background: var(--strong-cyan);
@@ -132,4 +135,14 @@ button.tip-percentage:hover {
 }
 .attribution a { 
         color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width:375px){
+    .forms, .form-totals{
+        width: 100%;
+    }
+    .main {
+        width: 70%;
+        display: block;
+    }
 }
