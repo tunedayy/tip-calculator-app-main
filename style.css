@@ -80,8 +80,8 @@ h4 {
     font-weight: 500;
     font-size: 1.5rem;
 }
-button.tip-percentage:hover {
-    background: var(--strong-cyan);
+.tip-percentage:hover {
+    background: var(--light-cyan-1);
     color: var(--very-dark-cyan);
 }
 .active {
@@ -122,6 +122,9 @@ button.tip-percentage:hover {
     position: relative;
     top: 32%;
     cursor: pointer;
+}
+.reset:hover{
+    background: var(--light-cyan-1);
 }
 .alert-message {
     color: red;
