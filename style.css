@@ -60,6 +60,9 @@ h4 {
   color: var(--very-dark-cyan);
   font-weight: 600;
   font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--light-cyan-2);
 }
 .forms div {
   margin-bottom: 20px;
