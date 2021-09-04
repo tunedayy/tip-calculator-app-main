@@ -59,7 +59,8 @@ function custom (){
         }
     }
 }
-document.addEventListener('keyup', custom);
+customTip.addEventListener('keyup', custom);
+customTip.addEventListener('click', custom);
 
 
 // reset button function

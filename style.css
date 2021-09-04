@@ -3,149 +3,159 @@
 Fonts
 ===============
 */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
 
 /*
 =============== 
 Variables
 ===============
 */
-:root{
- --light-cyan-1: hsl(185, 41%, 84%);
- --light-cyan-2: hsl(189, 41%, 97%);
- --strong-cyan: hsl(172, 67%, 45%);
---very-dark-cyan: hsl(183, 100%, 15%);
---fonts: 'Roboto Mono', monospace;
+:root {
+  --light-cyan-1: hsl(185, 41%, 84%);
+  --light-cyan-2: hsl(189, 41%, 97%);
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --fonts: "Roboto Mono", monospace;
 }
 
 body {
-    background: var(--light-cyan-1);
-    font-family: var(--fonts);
+  background: var(--light-cyan-1);
+  font-family: var(--fonts);
 }
 h4 {
-    margin: 5px;
-    text-transform: capitalize;
-    color: var(--very-dark-cyan);
-    font-weight: 600;
-    font-size: 0.8rem;
-    display: inline-block;
+  margin: 5px;
+  text-transform: capitalize;
+  color: var(--very-dark-cyan);
+  font-weight: 600;
+  font-size: 0.8rem;
+  display: inline-block;
 }
 .logo img {
-    display: block;
-    margin: 4em auto;
+  display: block;
+  margin: 4em auto;
 }
 .main {
-    background: #ffffff;
-    width: 60%;
-    margin: auto;
-    border-radius: 25px;
-    padding: 40px;
-    display: flex;
+  background: #ffffff;
+  width: 70%;
+  margin: auto;
+  border-radius: 25px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: auto;
 }
-.forms, .form-totals {
-    width: 50%;
-    padding: 10px;
+.forms,
+.form-totals {
+  padding: 10px;
 }
 .form-totals {
-    background: var(--very-dark-cyan);
-    border-radius: 15px;
-    color: #ffffff;
+  background: var(--very-dark-cyan);
+  border-radius: 15px;
+  color: #ffffff;
 }
-.forms input[type=number]{
-    padding: 5px;
-    width: 90%;
-    font-family: var(--fonts);
-    text-align: right;
-    color: var(--very-dark-cyan);
-    font-weight: 600;
-    font-size: 1.5rem;
+.forms input[type="number"] {
+  padding: 5px;
+  width: 90%;
+  font-family: var(--fonts);
+  text-align: right;
+  color: var(--very-dark-cyan);
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 .forms div {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+.bill-amount {
+  background-image: url("./images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .tip-percentage {
-    background: var(--very-dark-cyan);
-    color: #ffffff;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    margin: 5px;
-    font-family: var(--fonts);
-    font-weight: 500;
-    font-size: 1.5rem;
-    cursor: pointer;
+  background: var(--very-dark-cyan);
+  color: #ffffff;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  font-family: var(--fonts);
+  font-weight: 500;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 .custom-tip-percentage {
-    font-family: var(--fonts);
-    font-weight: 500;
-    font-size: 1.5rem;
+  font-family: var(--fonts);
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 .tip-percentage:hover {
-    background: var(--light-cyan-1);
-    color: var(--very-dark-cyan);
+  background: var(--light-cyan-1);
+  color: var(--very-dark-cyan);
 }
 .active {
-    background: var(--strong-cyan);
-    color: var(--very-dark-cyan);
+  background: var(--strong-cyan);
+  color: var(--very-dark-cyan);
 }
 .tip-buttons {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
 }
 .value {
-    float: right;
-    color: var(--strong-cyan);
-    font-size: 2.5rem;
-    font-weight: 600;
+  float: right;
+  color: var(--strong-cyan);
+  font-size: 2.5rem;
+  font-weight: 600;
 }
-.form-totals div{
-    padding-bottom: 80px;
+.guests {
+  background-image: url("./images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.form-totals div {
+  padding-bottom: 80px;
 }
 .form-totals p {
-    float: left;
+  float: left;
 }
 .form-totals sub {
-    color: var(--strong-cyan);
+  color: var(--strong-cyan);
 }
-.reset{
-    width: 90%;
-    background: var(--strong-cyan);
-    color: var(--very-dark-cyan);
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    font-family: var(--fonts);
-    font-size: 1rem;
-    font-weight: 600;
-    display: block;
-    margin: auto;
-    position: relative;
-    top: 32%;
-    cursor: pointer;
+.reset {
+  width: 90%;
+  background: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: var(--fonts);
+  font-size: 1rem;
+  font-weight: 600;
+  display: block;
+  margin: auto;
+  position: relative;
+  cursor: pointer;
 }
-.reset:hover{
-    background: var(--light-cyan-1);
+.reset:hover {
+  background: var(--light-cyan-1);
 }
 .alert-message {
-    color: red;
-    font-size: 0.6rem;
-    float: right;
-    padding-right: 10px;
+  color: red;
+  font-size: 0.6rem;
+  float: right;
+  padding-right: 10px;
 }
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
+.attribution {
+  font-size: 11px;
+  text-align: center;
 }
-.attribution a { 
-        color: hsl(228, 45%, 44%); 
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
-@media (max-width:375px){
-    .forms, .form-totals{
-        width: 100%;
-    }
-    .main {
-        width: 70%;
-        display: block;
-    }
+@media screen and (min-width: 768px) {
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+    width: 60%;
+  }
+  .reset {
+    top: 32%;
+  }
 }
